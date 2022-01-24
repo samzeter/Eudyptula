@@ -16,14 +16,14 @@ the Makefile you created to build the module.
 
 ## Notes
 
-### Using current systems config for kernel build
+### Using current systems config for kernel build (For Fedora 35):
 
-For Fedora 35:
 An exploded source tree is not required to build a kernel module, such as your own device driver,
-against the currently in-use kernel. Only the kernel-devel package is required to build external modules :
-`sudo dnf install kernel-devel-$(uname -r)`
+against the currently in-use kernel. Only the kernel-devel package is required to build external modules.
 
-For example, to build the foo.ko module, create the following Makefile in the directory containing the foo.c file:
+1. `sudo dnf install kernel-devel-$(uname -r)`
+
+2. For example, to build the foo.ko module, create the following Makefile in the directory containing the foo.c file:
 
     obj-m := foo.o 
 
@@ -33,15 +33,15 @@ For example, to build the foo.ko module, create the following Makefile in the di
     default:
 	$(MAKE) -C $(KDIR) M=$(PWD) modules
 	
-Issue the make command to build the foo.ko module.
+3. Issue the `make` command to build the foo.ko module.
 
-### Building the kernel tree out of system
+### Build against a custom kernel source
 
-Clone kernel git
+1. Clone kernel git
 
-`cp /boot/config-5.14.10-300.fc35.x86_64 ~/dev/tip/.config`
+2. `cp /boot/config-5.14.10-300.fc35.x86_64 ~/dev/tip/.config`
 
-In kernel root dir accept all defaults:
+3. In kernel root dir accept all defaults:
 `yes "" | make oldconfig`
 
-Then issue `make`
+4. Then issue `make`

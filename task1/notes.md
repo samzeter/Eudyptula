@@ -24,6 +24,7 @@ against the currently in-use kernel. Only the kernel-devel package is required t
 `sudo dnf install kernel-devel-$(uname -r)`
 
 For example, to build the foo.ko module, create the following Makefile in the directory containing the foo.c file:
+
     obj-m := foo.o 
 
     KDIR  := /lib/modules/$(shell uname -r)/build

@@ -35,9 +35,7 @@ For example, to build the foo.ko module, create the following Makefile in the di
 	
 Issue the make command to build the foo.ko module.
 
-###
-
-Building the kernel tree out of system
+### Building the kernel tree out of system
 
 Clone kernel git
 

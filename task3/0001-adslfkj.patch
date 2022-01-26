@@ -1,0 +1,25 @@
+From fa82d5df9519030f72e27c13abc9f9ee7f662de9 Mon Sep 17 00:00:00 2001
+From: Sam Zeter <samuelzeter@gmail.com>
+Date: Wed, 26 Jan 2022 15:47:41 +1100
+Subject: [PATCH] adslfkj
+
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 3f07f0f04..ca654e2bf 100644
+--- a/Makefile
++++ b/Makefile
+@@ -2,7 +2,7 @@
+ VERSION = 5
+ PATCHLEVEL = 16
+ SUBLEVEL = 0
+-EXTRAVERSION =
++EXTRAVERSION = -eudyptula
+ NAME = Gobble Gobble
+ 
+ # *DOCUMENTATION*
+-- 
+2.34.1
+

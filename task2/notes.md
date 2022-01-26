@@ -66,9 +66,7 @@ N.B. `make help` has a good list of options.
 
 9. `make install`
 
-10. Update grub `grub2-mkconfig -o "$(readlink -e /etc/grub2.conf)"`
-
-11. Reboot
+10. Reboot
 
 
 ## Cleaning up (this is why the extra version info is handy)
